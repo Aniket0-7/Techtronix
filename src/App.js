@@ -7,7 +7,6 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Schedule from './Components/Schedule';
 import Home from './Components/Home';
-
 function App() {
   const cursor = useRef(null)
   const changePosition = (e) => {
@@ -24,6 +23,7 @@ function App() {
         <Route path='/events' element={<Events></Events>}></Route>
         <Route path='/members' element={<Member></Member>}></Route>
         <Route path='/schedule' element={<Schedule></Schedule>}></Route>
+        
         </Route>
       </Routes>
       </BrowserRouter>
